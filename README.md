@@ -62,11 +62,7 @@ Promise fulfilled with object having properties:
 
 ```js
 Model.paginate({}, { page: 3, limit: 10 }, function(err, result) {
-  // result.docs
-  // result.total
-  // result.limit - 10
-  // result.page - 3
-  // result.pages
+  // result
 });
 ```
 
@@ -74,10 +70,7 @@ Or you can do the same with `offset` and `limit`:
 
 ```js
 Model.paginate({}, { offset: 20, limit: 10 }, function(err, result) {
-  // result.docs
-  // result.total
-  // result.limit - 10
-  // result.offset - 20
+  // result
 });
 ```
 
@@ -113,10 +106,7 @@ You can use `limit=0` to get only metadata:
 
 ```js
 Model.paginate({}, { offset: 100, limit: 0 }).then(function(result) {
-  // result.docs - empty array
-  // result.total
-  // result.limit - 0
-  // result.offset - 100
+  // result - empty array
 });
 ```
 
