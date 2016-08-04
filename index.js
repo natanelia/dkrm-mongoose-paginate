@@ -1,9 +1,10 @@
 'use strict';
 
-function paginate(params, options = { defaultPage: 0, defaultHitsPerPage: 10}) {
+function paginate(params, options) {
+  const _options = Object.assign({}, { defaultPage: 0, defaultHitsPerPage: 10}, options);
   const _params = {
-    page: params.page || options.defaultPage,
-    hitsPerPage: params.hitsPerPage || options.defaultHitsPerPage,
+    page: params.page || _options.defaultPage,
+    hitsPerPage: params.hitsPerPage || _options.defaultHitsPerPage,
   };
 
   return this
