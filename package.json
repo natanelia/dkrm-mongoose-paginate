@@ -1,28 +1,15 @@
 {
   "name": "dkrm-mongoose-paginate",
   "description": "Pagination plugin for Mongoose",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "author": {
-    "name": "Edward Hotchkiss",
-    "email": "edward@edwardhotchkiss.com"
+    "name": "Natan",
+    "email": "natanelia7@gmail.com"
   },
-  "contributors": [
-    {
-      "name": "Edward Hotchkiss",
-      "email": "edward@edwardhotchkiss.com"
-    },
-    {
-      "name": "Nick Baugh",
-      "email": "niftylettuce@gmail.com"
-    },
-    {
-      "name": "Dmitry Kirilyuk",
-      "email": "gk.joker@gmail.com"
-    }
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/edwardhotchkiss/mongoose-paginate.git"
+    "url": "https://github.com/natanelia/dkrm-mongoose-paginate.git"
   },
   "license": "MIT",
   "keywords": [
@@ -33,15 +20,7 @@
     "page"
   ],
   "engines": {
-    "node": ">=4.2.4"
+    "node": ">=4.1.0"
   },
   "dependencies": {},
-  "devDependencies": {
-    "mongoose": "4.3.4",
-    "mocha": "2.3.4",
-    "chai": "3.4.1"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha tests/*.js -R spec --ui bdd --timeout 5000"
-  }
 }
