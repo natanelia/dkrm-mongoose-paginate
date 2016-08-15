@@ -3,8 +3,8 @@
 function paginate(params, options) {
   const _options = Object.assign({}, { defaultPage: 0, defaultHitsPerPage: 10}, options);
   const _params = {
-    page: params.page || _options.defaultPage,
-    hitsPerPage: params.hitsPerPage || _options.defaultHitsPerPage,
+    page: Number(params.page || _options.defaultPage),
+    hitsPerPage: Number(params.hitsPerPage || _options.defaultHitsPerPage),
   };
 
   return this
